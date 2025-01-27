@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dynamic Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Animated Header -->
+        <header class="animate-slide-in">
+            <h1>Interactive Dashboard</h1>
+        </header>
+
+        <!-- Interactive Boxes Section -->
+        <section class="boxes-container">
+            <!-- Box 1: Calculator -->
+            <div class="box calculator-box">
+                <h2>Area Calculator</h2>
+                <div class="input-group">
+                    <input type="number" id="length" placeholder="Length">
+                    <input type="number" id="width" placeholder="Width">
+                    <button onclick="calculateArea()">Calculate</button>
+                </div>
+                <div id="result" class="result"></div>
+            </div>
+
+            <!-- Box 2: Animation Control -->
+            <div class="box animation-box">
+                <h2>Animation Control</h2>
+                <div class="spinner"></div>
+                <button onclick="toggleSpinner()">Toggle Spinner</button>
+            </div>
+
+            <!-- Box 3: Interactive Card -->
+            <div class="box modal-box">
+                <h2>Modal Space</h2>
+                <button onclick="toggleModal()">Open Portal</button>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Welcome!</h2>
+                <p>This is my portal login!</p>
+                <button onclick="toggleModal()">Close Portal</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
